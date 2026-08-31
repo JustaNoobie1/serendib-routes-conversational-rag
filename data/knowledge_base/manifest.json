@@ -1,0 +1,474 @@
+{
+  "version": "3.0",
+  "chunk_count": 35,
+  "chunks": [
+    {
+      "chunk_id": "SR-000-C001",
+      "title": "Serendib Routes Knowledge Base - Usage and Grounding Rules",
+      "category": "system",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "grounding",
+        "verification",
+        "dynamic data",
+        "rules"
+      ]
+    },
+    {
+      "chunk_id": "SR-001-C001",
+      "title": "Serendib Routes Company Profile",
+      "category": "company",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "company",
+        "services",
+        "about"
+      ]
+    },
+    {
+      "chunk_id": "SR-002-C001",
+      "title": "Serendib Routes Brand Voice",
+      "category": "company",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "brand voice",
+        "tone"
+      ]
+    },
+    {
+      "chunk_id": "SR-003-C001",
+      "title": "Proposed Booking, Payment and Cancellation Policy Template",
+      "category": "policy",
+      "status": "proposed",
+      "dynamic": false,
+      "intent_tags": [
+        "cancellation",
+        "payment",
+        "quotation",
+        "policy"
+      ]
+    },
+    {
+      "chunk_id": "SR-004-C001",
+      "title": "Booking and Confirmation Boundaries",
+      "category": "policy",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "booking",
+        "confirmation",
+        "guarantee"
+      ]
+    },
+    {
+      "chunk_id": "SR-005-C001",
+      "title": "Dynamic Information Verification Rules",
+      "category": "policy",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "live data",
+        "weather",
+        "visa",
+        "availability",
+        "rates",
+        "schedule"
+      ]
+    },
+    {
+      "chunk_id": "SR-006-C001",
+      "title": "Traveler Preference Collection",
+      "category": "planning",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "customize",
+        "preferences",
+        "clarification"
+      ]
+    },
+    {
+      "chunk_id": "SR-007-C001",
+      "title": "Route Design and Pacing Principles",
+      "category": "planning",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "pace",
+        "routing",
+        "itinerary design"
+      ]
+    },
+    {
+      "chunk_id": "SR-008-C001",
+      "title": "Transport Planning Principles",
+      "category": "planning",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "transport",
+        "train",
+        "transfer"
+      ]
+    },
+    {
+      "chunk_id": "SR-010-C001",
+      "title": "Indicative Budget Framework - Planning Only",
+      "category": "budget",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "budget",
+        "price",
+        "cost",
+        "comfort",
+        "premium",
+        "luxury"
+      ]
+    },
+    {
+      "chunk_id": "SR-011-C001",
+      "title": "Making a Trip More Affordable",
+      "category": "budget",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "cheaper",
+        "affordable",
+        "lower cost",
+        "budget reduction",
+        "honeymoon"
+      ]
+    },
+    {
+      "chunk_id": "SR-012-C001",
+      "title": "Destinations - Cultural Triangle",
+      "category": "destination",
+      "status": "stable",
+      "dynamic": false,
+      "region": "Cultural Triangle",
+      "intent_tags": [
+        "Sigiriya",
+        "Dambulla",
+        "Polonnaruwa",
+        "culture"
+      ]
+    },
+    {
+      "chunk_id": "SR-013-C001",
+      "title": "Destinations - Kandy",
+      "category": "destination",
+      "status": "stable",
+      "dynamic": false,
+      "region": "Kandy",
+      "intent_tags": [
+        "Kandy",
+        "culture",
+        "hill transition"
+      ]
+    },
+    {
+      "chunk_id": "SR-014-C001",
+      "title": "Destinations - Hill Country",
+      "category": "destination",
+      "status": "stable",
+      "dynamic": false,
+      "region": "Hill Country",
+      "intent_tags": [
+        "Ella",
+        "Nuwara Eliya",
+        "tea country",
+        "hill country"
+      ]
+    },
+    {
+      "chunk_id": "SR-015-C001",
+      "title": "Destinations - South Coast and Galle",
+      "category": "destination",
+      "status": "stable",
+      "dynamic": false,
+      "region": "South Coast",
+      "intent_tags": [
+        "Galle",
+        "Weligama",
+        "Mirissa",
+        "beach",
+        "coast"
+      ]
+    },
+    {
+      "chunk_id": "SR-016-C001",
+      "title": "Destinations - Colombo, Negombo and West",
+      "category": "destination",
+      "status": "stable",
+      "dynamic": false,
+      "region": "West",
+      "intent_tags": [
+        "Colombo",
+        "Negombo",
+        "airport",
+        "city"
+      ]
+    },
+    {
+      "chunk_id": "SR-017-C001",
+      "title": "Destinations - North and East",
+      "category": "destination",
+      "status": "stable",
+      "dynamic": false,
+      "region": "North and East",
+      "intent_tags": [
+        "Jaffna",
+        "Trincomalee",
+        "Pasikuda",
+        "Arugam Bay",
+        "east coast"
+      ]
+    },
+    {
+      "chunk_id": "SR-018-C001",
+      "title": "Destinations - Wildlife Regions",
+      "category": "destination",
+      "status": "stable",
+      "dynamic": false,
+      "region": "Wildlife",
+      "intent_tags": [
+        "Yala",
+        "Udawalawe",
+        "wildlife",
+        "safari"
+      ]
+    },
+    {
+      "chunk_id": "SR-019-C001",
+      "title": "Sample Itineraries - 3 to 5 Days",
+      "category": "itinerary",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "3 nights",
+        "4 nights",
+        "5 nights",
+        "short itinerary"
+      ]
+    },
+    {
+      "chunk_id": "SR-020-C001",
+      "title": "Sample Itinerary - 6 Nights / 7 Days",
+      "category": "itinerary",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "7 days",
+        "6 nights",
+        "honeymoon",
+        "week itinerary"
+      ]
+    },
+    {
+      "chunk_id": "SR-020-C002",
+      "title": "Sample Itinerary - 7 Nights / 8 Days",
+      "category": "itinerary",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "7 nights",
+        "8 days",
+        "classic",
+        "slow premium",
+        "couples"
+      ]
+    },
+    {
+      "chunk_id": "SR-020-C003",
+      "title": "Sample Itineraries - 10 to 14 Nights",
+      "category": "itinerary",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "10 nights",
+        "12 nights",
+        "14 nights",
+        "long itinerary"
+      ]
+    },
+    {
+      "chunk_id": "SR-021-C001",
+      "title": "Theme Guide - Honeymoon and Luxury",
+      "category": "theme",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "honeymoon",
+        "luxury",
+        "romantic",
+        "couple"
+      ]
+    },
+    {
+      "chunk_id": "SR-022-C001",
+      "title": "Theme Guide - Family Travel",
+      "category": "theme",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "family",
+        "children"
+      ]
+    },
+    {
+      "chunk_id": "SR-023-C001",
+      "title": "Theme Guide - Wildlife and Nature",
+      "category": "theme",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "wildlife",
+        "nature",
+        "safari"
+      ]
+    },
+    {
+      "chunk_id": "SR-024-C001",
+      "title": "Theme Guide - Culture and Heritage",
+      "category": "theme",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "culture",
+        "heritage",
+        "temple",
+        "history"
+      ]
+    },
+    {
+      "chunk_id": "SR-025-C001",
+      "title": "Theme Guide - East Coast and Surf",
+      "category": "theme",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "east coast",
+        "surf",
+        "Trincomalee",
+        "Pasikuda",
+        "Arugam Bay"
+      ]
+    },
+    {
+      "chunk_id": "SR-026-C001",
+      "title": "Serendib Routes Frequently Asked Questions",
+      "category": "faq",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "FAQ",
+        "customize",
+        "price",
+        "train",
+        "hotel",
+        "visa"
+      ]
+    },
+    {
+      "chunk_id": "SR-028-C001",
+      "title": "Hotel Reference - Colombo",
+      "category": "hotel",
+      "status": "stable",
+      "dynamic": false,
+      "region": "Colombo",
+      "intent_tags": [
+        "hotel",
+        "Colombo",
+        "luxury"
+      ]
+    },
+    {
+      "chunk_id": "SR-028-C002",
+      "title": "Hotel Reference - Cultural Triangle",
+      "category": "hotel",
+      "status": "stable",
+      "dynamic": false,
+      "region": "Cultural Triangle",
+      "intent_tags": [
+        "hotel",
+        "Sigiriya",
+        "Dambulla",
+        "honeymoon",
+        "luxury"
+      ]
+    },
+    {
+      "chunk_id": "SR-028-C003",
+      "title": "Hotel Reference - Kandy",
+      "category": "hotel",
+      "status": "stable",
+      "dynamic": false,
+      "region": "Kandy",
+      "intent_tags": [
+        "hotel",
+        "Kandy",
+        "boutique",
+        "couple"
+      ]
+    },
+    {
+      "chunk_id": "SR-028-C004",
+      "title": "Hotel Reference - Hill Country",
+      "category": "hotel",
+      "status": "stable",
+      "dynamic": false,
+      "region": "Hill Country",
+      "intent_tags": [
+        "hotel",
+        "Ella",
+        "Nuwara Eliya",
+        "hill country"
+      ]
+    },
+    {
+      "chunk_id": "SR-028-C005",
+      "title": "Hotel Reference - South Coast",
+      "category": "hotel",
+      "status": "stable",
+      "dynamic": false,
+      "region": "South Coast",
+      "intent_tags": [
+        "hotel",
+        "Galle",
+        "Weligama",
+        "coast",
+        "honeymoon"
+      ]
+    },
+    {
+      "chunk_id": "SR-028-C006",
+      "title": "Hotel Reference - North and East",
+      "category": "hotel",
+      "status": "stable",
+      "dynamic": false,
+      "region": "North and East",
+      "intent_tags": [
+        "hotel",
+        "Trincomalee",
+        "Jaffna",
+        "east coast"
+      ]
+    },
+    {
+      "chunk_id": "SR-029-C001",
+      "title": "Human Handoff Triggers",
+      "category": "operations",
+      "status": "stable",
+      "dynamic": false,
+      "intent_tags": [
+        "handoff",
+        "human",
+        "booking"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+langchain
+langchain-core
+langchain-community
+langchain-huggingface
+langchain-qdrant
+pypdf
+pymupdf
+sentence-transformers
+qdrant_client
+langchain-ollama
+langgraph
+uvicorn
+fastapi

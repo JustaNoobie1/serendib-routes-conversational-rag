@@ -1,0 +1,13 @@
+# Python-generated files
+__pycache__/
+*.pyc
+storage/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+.env
+.venv/
+venv/

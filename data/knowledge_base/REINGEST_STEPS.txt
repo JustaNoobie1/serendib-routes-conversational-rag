@@ -1,0 +1,25 @@
+SERENDIB ROUTES KB v3 - REPLACEMENT STEPS
+
+1) Stop Uvicorn and any notebook/kernel using local Qdrant.
+2) Back up your current data/knowledge_base/rag_chunks.jsonl and storage/qdrant_langchain/.
+3) Replace data/knowledge_base/rag_chunks.jsonl with the new file.
+4) Check your DocumentManager field name. This JSONL includes content, text, and page_content aliases.
+5) Recreate the local Qdrant collection by running your ingestion script once.
+6) Start FastAPI again.
+7) Keep retriever top_k=5 for the current tests.
+8) Test with a NEW thread_id:
+   - I want a luxury honeymoon in Sri Lanka.
+   - What about 7 days?
+   - Can you make it cheaper?
+
+Expected rewrite targets:
+- luxury honeymoon in Sri Lanka
+- 7-day luxury honeymoon in Sri Lanka
+- lower-cost options for a 7-day luxury honeymoon in Sri Lanka
+
+Expected retrieval:
+- honeymoon -> SR-021 + relevant hotel/theme chunks
+- 7-day -> SR-020-C001 + SR-021
+- cheaper -> SR-011-C001 + SR-010-C001 + SR-021
+
+Do not run ingestion and FastAPI simultaneously against the same local Qdrant folder.
