@@ -1,13 +1,18 @@
 from pathlib import Path
-from core.document_manager import DocumentManager
-from core.embedding_manager import EmbeddingManager
-from core.vector_store_manager import VectorStoreManager
-
+import os
+from src.core.document_manager import DocumentManager
+from src.core.embedding_manager import EmbeddingManager
+from src.core.vector_store_manager import VectorStoreManager
+from dotenv import load_dotenv
 
 PROJECT_ROOT = (
     Path(__file__).resolve().parents[1]
 )
-
+ENV_PATH = PROJECT_ROOT / ".env"
+print("PROJECT ROOT:", PROJECT_ROOT)
+print("ENV PATH:", ENV_PATH)
+print("ENV EXISTS:", ENV_PATH.exists())
+load_dotenv(dotenv_path=ENV_PATH, override=True)
 
 DATA_FILE = (
     PROJECT_ROOT
@@ -25,6 +30,48 @@ QDRANT_PATH = (
 
 
 def main():
+
+    QDRANT_PATH = (
+    PROJECT_ROOT
+    / "storage"
+    / "qdrant_langchain"
+)
+
+
+def main():
+
+    print(
+        "ENV FILE:",
+        ENV_PATH
+    )
+
+    print(
+        "QDRANT MODE:",
+        os.getenv("QDRANT_MODE")
+    )
+
+    print(
+        "QDRANT URL SET:",
+        bool(
+            os.getenv("QDRANT_URL")
+        )
+    )
+
+    print(
+        "QDRANT API KEY SET:",
+        bool(
+            os.getenv(
+                "QDRANT_API_KEY"
+            )
+        )
+    )
+
+    print(
+        "QDRANT COLLECTION:",
+        os.getenv(
+            "QDRANT_COLLECTION"
+        )
+    )
 
     # Load documents
     document_manager = DocumentManager(DATA_FILE)

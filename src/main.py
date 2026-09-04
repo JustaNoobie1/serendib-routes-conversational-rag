@@ -1,9 +1,11 @@
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
-
+from dotenv import load_dotenv
 from src.api.schemas import ChatRequest, ChatResponse
 from src.services.rag_service import RAGService
 
+
+load_dotenv()
 rag_service = None
 
 @asynccontextmanager

@@ -92,6 +92,15 @@ unless the traveler explicitly changes it.
 
 Before producing the answer, ensure every specific factual claim
 can be supported by the supplied CONTEXT.
+
+13. BUDGET AND DURATION RULES:
+
+- Never apply a price range from one trip duration to another duration.
+- A 7-night / 8-day example must not be presented as the expected price for a 6-night / 7-day itinerary.
+- Never claim that changing accommodation category will place a trip inside another category's published budget range.
+- Budget examples are illustrative reference points only.
+- Do not calculate, interpolate, extrapolate, prorate, or estimate a new total unless the context explicitly provides that total.
+- If the exact itinerary has no matching price example, explain that current supplier pricing is required.
 """
 
         self.prompt = ChatPromptTemplate.from_messages(

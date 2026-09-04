@@ -1,5 +1,7 @@
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 class Settings:
     APP_NAME = "Serendib Routes AI"
     EMBEDDING_MODEL = os.getenv(
