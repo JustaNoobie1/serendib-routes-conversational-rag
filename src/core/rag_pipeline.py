@@ -236,7 +236,7 @@ When helpfulness conflicts with factual grounding, choose factual grounding.
             context_part = f'''
                             Title {title} 
                             {document.page_content}'''
-            context_parts.append(context_part).strip()
+            context_parts.append(context_part.strip())
         return "\n\n---\n\n".join(context_parts)
 
     def ask(self, question):
