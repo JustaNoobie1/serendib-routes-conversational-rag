@@ -1,21 +1,27 @@
-from langchain_ollama import ChatOllama
+from langchain_openai import ChatOpenAI
+import os
 
 class LLMManager:
-    def __init__(self, model_name="qwen3:4b-instruct-2507-q4_K_M", temperature=0):
-        self.model_name = model_name
+    def __init__(self, model_name=None, temperature=0):
+        self.provider = os.getenv('LLM_PROVIDER', 'ollama').lower().strip()
+        self.model_name = os.getenv('GROQ_MODEL', "openai/gpt-oss-120b")
         self.temperature = temperature
         self.llm = None
+
         self.initialize_llm()
 
     def initialize_llm(self):
         try:
-            print(f"Loading the LLM through Ollama:{self.model_name}")
-            self.llm = ChatOllama(
+            print(f"Loading the hosted LLM through Groq:{self.model_name}")
+            self.llm = ChatOpenAI(
                 model = self.model_name,
                 temperature = self.temperature,
-                keep_alive = '30m'
+                api_key= os.environ['GROQ_API_KEY'],
+                base_url= 'https://api.groq.com/openai/v1',
+                max_completion_tokens=2048,
+                use_responses_api=False
             )
-            print("LLM initialized successfully")
+            print("Groq LLM initialized successfully")
         except Exception as e:
             print(f"Error initializing the LLM: {e}")
             raise

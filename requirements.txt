@@ -12,3 +12,4 @@ langgraph
 uvicorn
 fastapi
 dotenv
+langchain-openai
