@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from src.api.schemas import ChatRequest, ChatResponse
 from src.services.rag_service import RAGService
 from uuid import uuid4
-
+from fastapi.middleware.cors import CORSMiddleware
 
 load_dotenv()
 rag_service = None
@@ -28,6 +28,16 @@ app = FastAPI(
         "Conversational RAG travel assistant for Sri Lanka tourism.",
     version="2.0.0",
     lifespan=lifespan
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+    ],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 @app.get("/health")
