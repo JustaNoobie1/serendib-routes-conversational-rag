@@ -57,5 +57,5 @@ def chat(request: ChatRequest):
 )
     return ChatResponse(
         answer=answer,
-        thread_id=request.thread_id
+        thread_id=thread_id
     )
